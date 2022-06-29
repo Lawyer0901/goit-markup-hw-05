@@ -109,7 +109,7 @@ ul {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1.3px;
   display: block;
   width: 100%;
   height: 4px;
@@ -136,8 +136,7 @@ ul {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .auth-link:hover .mail-icon {
   fill: currentColor;
@@ -200,10 +199,10 @@ ul {
   line-height: 1.8;
   letter-spacing: 0.06em;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   background: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Заголовки цвет */
@@ -294,6 +293,7 @@ ul {
 }
 .img-text {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -358,7 +358,8 @@ ul {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-link:hover {
+.team-link:hover,
+.team-link:focus {
   background-color: var(--button-bg-color);
   fill: var(--button-active-color);
 }
@@ -527,7 +528,8 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--button-bg-color);
 }
 
@@ -595,7 +597,6 @@ ul {
 .img-container {
   position: relative;
   overflow: hidden;
-  /* transition: translateY 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .text-absolute {
